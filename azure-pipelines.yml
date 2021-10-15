@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool: 'Default'
+
+steps:
+
+- script: |
+    dir
+  displayName: 'Check current directory'
+
+- script: |
+
+    appscansrccli scr cli_script.txt
+
+  displayName: 'AppScan Source Step'
+
+- script: |
+    dir
+  displayName: 'Check current directory after'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)/s/report_FP.pdf'
+    publishLocation: 'pipeline'

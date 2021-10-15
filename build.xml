@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     AltoroJ Build File    
+                   
+     Alexei                                                                
+     ====================================================================== -->
+<project name="AltoroJ Build File" default="build">
+    <description>
+	Builds AltoroJ, creates AppScan Source configuration files and runs an AppScan Source Scan
+    </description>
+
+
+
+<!-- Required for AppScan Source Integration -->
+    <taskdef resource="com/ouncelabs/ounceant/task/ounce.xml" classpath="ounceant.jar"/>
+	
+
+
+
+	
+	<!-- UPDATE THIS PROPERTY TO POINT TO THE LOCATION OF THE AltoroJ_build DIRECTORY -->	
+	<property name="base.dir" location="C:/Sample Applications"/>
+	
+	<!-- UPDATE THIS PROPERTY TO POINT TO THE APPSCAN SOURCE INSTALL DIRECTORY -->
+	<property name="install.dir" location="C:/Program Files (x86)/IBM/AppScanSource"/>
+	
+	<property name="altoroj.dir" location="${base.dir}/AltoroJ_ant"/>
+	<property name="tomcat.dir" location="${base.dir}/apache-tomcat-6.0.35"/>
+	<property name="tomcat.lib.dir" location="${tomcat.dir}/lib"/>
+	<property name="web.content.dir" location="${altoroj.dir}/WebContent"/>
+	<property name="web.classes.dir" location="${web.content.dir}/WEB-INF/classes"/>
+	<property name="altoroj.lib.dir" location="${web.content.dir}/WEB-INF/lib"/>
+
+
+<!-- Required for AppScan Source Integration -->
+	<property name="build.compiler" value="com.ouncelabs.ounceant.OunceCompilerAdapter"/>
+
+
+	<property name="ounce.project_name" value="AltoroJ_Ant"/>
+	<property name="ounce.project_dir" location="${altoroj.dir}"/>
+	<property name="ounce.application_name" value="AltoroJ_Ant"/>
+	<property name="ounce.application_dir" location="${altoroj.dir}"/>
+	
+    <!-- ================================= 
+		Default target
+         ================================= -->
+    <target name="build" depends="clean, compile, assemble, scan" description="Builds AltoroJ" />
+
+	<target name="clean">
+		<delete dir="${web.classes.dir}"/>
+	</target>
+	
+    <target name="compile">
+
+	<mkdir dir="${web.classes.dir}"/>
+    	<javac srcdir="${altoroj.dir}/src" destdir="${web.classes.dir}">
+		<classpath>
+		  <fileset dir="${tomcat.lib.dir}" includes="*.jar"/>
+		  <fileset dir="${altoroj.lib.dir}" includes="*.jar"/>		
+		</classpath>
+	</javac>
+    	
+    	<ounceCreateProject workingDir="${altoroj.dir}">
+    		<ounceWeb webContextRoot="${web.content.dir}"/>
+    	</ounceCreateProject>	
+    </target>
+
+    <target name="assemble">
+    	<war destfile="${altoroj.dir}/altoroj.war" basedir="${altoroj.dir}/WebContent"/>
+    </target>
+	
+	<target name="scan">
+		<ounceCli dir="${install.dir}" script="${altoroj.dir}/cli_script.txt" output="log.txt"/>
+	</target>
+		
+</project>

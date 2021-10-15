@@ -15,9 +15,7 @@ steps:
   displayName: 'Check current directory'
 
 - script: |
-
     appscansrccli scr cli_script.txt
-
   displayName: 'Perform AppScan Source SAST Scan, Generate PDF report, publish to ASE'
 
 - script: |

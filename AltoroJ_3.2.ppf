@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project fallback_default_config_name="Configuration 1" ltd_name="java" name="AltoroJ_3.2" version="10.0.5" web_context_root_path=".\WebContent">
+	<Configuration class_path="C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\WEB-INF\lib\Log4AltoroJ.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\WEB-INF\lib\jersey-server-2.27.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\WEB-INF\lib\wink-json4j-1.4.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\lib\servlet-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\temp\javaagent-6642330027585095522\external\commons-codec-1.15.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\WEB-INF\lib\javax.ws.rs-api-2.1.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\WEB-INF\lib\commons-lang-2.5.jar;C:\Program Files\Apache Software Foundation\Tomcat 7.0\lib\annotations-api.jar" jdk_name="AdoptOpenJDK 11 64 bit" name="Configuration 1"/>
+	<Source exclude="false" path=".\src" web="false"/>
+	<Source exclude="false" path=".\WebContent" web="true"/>
+	<ProjectScanSettings/>
+</Project>

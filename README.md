@@ -9,6 +9,9 @@ This integration works with Azure DevOps (should work for both Cloud and on-prem
 4. ADO runs the appscanscrccli command scripts, which including setting up an application, running a scan, generate assessment (ozasmt), generating PDF reports
 5. PDF report is extracted out of the agent and is published back in ADO for viewing
 
+![Demo Workflow Diagram drawio](https://user-images.githubusercontent.com/5158535/142063443-8c91ad4d-2261-4a56-b57c-21af87c21371.png)
+
+
 I've made my Azure DevOp pipeline public and you can view it here:
 https://dev.azure.com/ChiuAntony/AppScan%20Source%20Automation%20via%20self-hosted%20Agent
 

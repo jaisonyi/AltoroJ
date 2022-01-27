@@ -1,1 +1,3 @@
 $PSVersionTable
+ls
+dir env:

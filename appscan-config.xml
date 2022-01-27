@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration thirdParty="true">
+  <Targets>
+    <Target path="WebContent">
+      <Exclude>admin/admin.jsp</Exclude>
+      <Exclude>WebContent\swagger\lib\jquery.slideto.min.js</Exclude>
+      <Exclude>WebContent\swagger\swagger-ui.min.js</Exclude>
+      <Exclude>WebContent\swagger\oauth2-redirect.html</Exclude>
+      <Exclude>WebContent\swagger\lib\swagger-oauth.js</Exclude>
+      <Exclude>feedbacksuccess.jsp</Exclude>
+      <Exclude>feedback.jsp</Exclude>
+      <Exclude>WebContent\swagger\lib\backbone-min.js</Exclude>
+      <Exclude>bank/transaction.jsp</Exclude>
+      <Exclude>search.jsp</Exclude>
+      <Exclude>WebContent\swagger\o2c.html</Exclude>
+      <Exclude>WebContent\swagger\lang\en.js</Exclude>
+      <Exclude>WebContent\swagger\lib\jquery-1.8.0.min.js</Exclude>
+      <Exclude>notfound.jsp</Exclude>
+      <Exclude>WebContent\swagger\fonts\droid-sans-v6-latin-regular.svg</Exclude>
+      <Exclude>bank/balance.jsp</Exclude>
+      <Exclude>WebContent\swagger\fonts\droid-sans-v6-latin-700.svg</Exclude>
+      <Exclude>WebContent\swagger\swagger-ui-standalone-preset.js</Exclude>
+      <Exclude>bank/queryxpath.jsp</Exclude>
+      <Exclude>WebContent\swagger\lib\jquery.ba-bbq.min.js</Exclude>
+      <Exclude>WebContent\swagger\lib\underscore-min.js</Exclude>
+      <Exclude>WebContent\swagger\lib\handlebars-2.0.0.js</Exclude>
+      <Exclude>index.jsp</Exclude>
+      <Exclude>bank/main.jsp</Exclude>
+      <Exclude>WebContent\swagger\lib\highlight.7.3.pack.js</Exclude>
+      <Exclude>WebContent\swagger\index.html</Exclude>
+      <Exclude>WebContent\swagger\swagger-ui-bundle.js</Exclude>
+      <Exclude>WebContent\swagger\lib\jquery.wiggle.min.js</Exclude>
+      <Exclude>bank/transfer.jsp</Exclude>
+      <Exclude>WebContent\swagger\lang\pt.js</Exclude>
+      <Exclude>admin/feedbackReview.jsp</Exclude>
+      <Exclude>WebContent\swagger\lang\ru.js</Exclude>
+      <Exclude>WebContent\swagger\lang\es.js</Exclude>
+      <Exclude>WebContent\swagger\lang\translator.js</Exclude>
+      <Exclude>WebContent\swagger\lib\marked.js</Exclude>
+      <Exclude>WebContent\swagger\swagger-ui.js</Exclude>
+    </Target>
+    <Target path=""/>
+  </Targets>
+</Configuration>

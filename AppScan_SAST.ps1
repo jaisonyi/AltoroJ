@@ -67,10 +67,10 @@ $params = @{
 }
 $body = @{
    'ApplicationFileId' = "$upload_File_ID"
-   'ScanName' = "$env:ASoC_scanName"
+   'ScanName' = "$env:ASOC_SCAN_NAME"
    'EnableMailNotification' = "true"
    'Locale' = "en-US"
-   'AppId' = "$env:ASoC_appID"
+   'AppId' = "$env:ASOC_APPID"
    'Execute' = "true"
    'FullyAutomatic' = "false"
    'Personal' = "false"

@@ -7,6 +7,11 @@ $baseURL = 'https://cloud.appscan.com/api/V2'
 $env:ASoC_IRX_Config_file = "appscan-config.xml"
 $bearer_token =''
 
+if (-Not (Test-Path -Path $env:ASoC_IRX_Config_file -PathType Leaf)){
+    Write-Error "$env:ASoC_IRX_Config_file not found, exiting..."
+    exit $LASTEXITCODE 
+  }
+
 # ASoC - Login to ASoC with API Key and Secret
 $jsonBody = "
   {

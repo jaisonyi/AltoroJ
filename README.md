@@ -32,7 +32,7 @@ The full report can be downloaded there:
 ## Additional Notes
 The following 4 files in the repo are required:
 
-* __azure-pipelines.ym__l <--- This is the pipeline configuration, notice in line 18, we call appscansrccli to run "cli_script.txt". Also notice line 9: (pool: 'Default') is the agent pool where my self-hosted 2016 windows server machine is located. 
+* __azure-pipelines.yml__ <--- This is the pipeline configuration, notice in line 18, we call appscansrccli to run "cli_script.txt". Also notice line 9: (pool: 'Default') is the agent pool where my self-hosted 2016 windows server machine is located. 
 * __cli_script.txt__ <--- Runs AppScan Source CLI, will point to the .paf and ppf files to initialize the application 
 * __AltoroJ_3.2.paf__ <---- Need to be pre-generated in AppScan Source for Analysis (think of this as putting in the appscan-config.xml in the context of ASoC)
 * __AltoroJ_3.2.ppf__ <---- Need to be pre-generated in AppScan Source for Analysis (think of this as putting in the appscan-config.xml in the context of ASoC)

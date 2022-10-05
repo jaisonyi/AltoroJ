@@ -1,6 +1,0 @@
-login WIN-OO7D1QKUTRK -acceptssl
-oa AltoroJ_3.2.paf
-scan AltoroJ_3.2.ozasmt
-report "Findings By Fix Group" pdf-comprehensive report_FP.pdf -includeSrcBefore:5 -includeSrcAfter:5 -includeTrace:suspect
-pase -aseapplication "SAST Application" 
-quit

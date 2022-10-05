@@ -1,0 +1,5 @@
+login_file WIN-OO7D1QKUTRK "C:\ProgramData\HCL\AppScanSource\config\ounceautod.token" -acceptssl
+RUNAS AUTO
+oa "AltoroJ.paf" -appserver_type "Tomcat7" -no_ear_project 
+ra "AltoroJ.ozasmt" -scanconfig "Normal scan"
+exit

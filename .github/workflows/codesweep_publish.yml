@@ -12,6 +12,8 @@ jobs:
           asoc_key: ${{secrets.ASC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
-          application_id: <your ASoC application ID>
+          application_id: b63e6b12-1fe0-4960-853d-0a54c2869e24
+          issue_status: "open"
+          scan_base_name: "CodeSweep"
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

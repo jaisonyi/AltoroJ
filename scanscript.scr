@@ -1,5 +1,7 @@
-login_file WIN-OO7D1QKUTRK "C:\ProgramData\HCL\AppScanSource\config\ounceautod.token" -acceptssl
-RUNAS AUTO
-oa "AltoroJ.paf" -appserver_type "Tomcat7" -no_ear_project 
-ra "AltoroJ.ozasmt" -scanconfig "Normal scan"
-exit
+# login_file WIN-OO7D1QKUTRK "C:\ProgramData\HCL\AppScanSource\config\ounceautod.token" -acceptssl
+# RUNAS AUTO
+# OF "E:\actions-runner\actions-runner-win-x64-2.299.1\_work\AltoroJ\AltoroJ\AltoroJ.paf" 
+# SCAN AltoroJ.ozasmt -scanconfig "Max finding"
+# rpt "Software Security Profile" html "altoroJ_3.2_SecurityReport.html" -includeHowToFix -includeSrcBefore:5 -includeSrcAfter:5 -includeTrace:suspect
+# pase "E:\actions-runner\actions-runner-win-x64-2.299.1\_work\AltoroJ\AltoroJ\AltoroJ_.ozasmt" -name AltoroJ -aseapplication AltoroJ_Git
+# exit
